@@ -1,6 +1,8 @@
 'use strict';
 
-
+/*
+ * Imports & variables
+ */
     // https://github.com/node-hid/node-hid
 var HID = require('node-hid'),
     // Get all devices connected to the computer
