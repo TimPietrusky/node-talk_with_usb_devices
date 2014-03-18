@@ -1,2 +1,4 @@
-node-talk_with_usb_devices
-==========================
+Connect USB Device
+=======================
+
+Connect to a specific USB device. 

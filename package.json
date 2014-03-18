@@ -1,0 +1,20 @@
+{
+  "name": "node-talk_with_usb_devices",
+  "title": "Talk with USB devices: find, connect, read, write",
+  "description": "Find USB devices, connect to them, read & write the device.",
+  "url": "http://github.com/TimPietrusky/node-talk_with_usb_devices",
+  "author": "Tim Pietrusky",
+  "copyright": "2014",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/TimPietrusky/node-talk_with_usb_devices.git"
+  },
+  "dependencies": {
+    "node-hid": "~0.3.1"
+  },
+  "engines": {
+    "node": ">=0.10"
+  }
+}
