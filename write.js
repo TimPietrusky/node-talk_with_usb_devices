@@ -19,7 +19,10 @@ var HID = require('node-hid'),
  */
 var options = {
   vendorID : 8483,
-  productID : 4112
+  productID : 4112,
+  left  : [2, 4, 0, 0, 0, 0, 0, 0],
+  right : [2, 8, 0, 0, 0, 0, 0, 0],
+  stop  : [2, 32, 0, 0, 0, 0, 0, 0]
 }
 
 
@@ -34,10 +37,12 @@ devices.forEach(function(device, index) {
       // Open the device
       connectedDevice = new HID.HID(device.path);
 
-      // Read from device
-      connectedDevice.on("data", function(data) {
-        console.log(data);
-      });
+      // Write to device
+      connectedDevice.write(options.right);      
+
+      setTimeout(function() {
+        connectedDevice.write(options.stop);
+      }, 500);
 
     }
 
