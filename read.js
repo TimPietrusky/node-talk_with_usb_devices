@@ -22,7 +22,7 @@ var options = {
   productID : 13 // 4112
 }
 
-console.log(devices);
+
 
 
 
